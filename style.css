@@ -184,6 +184,32 @@ h2 {
   font-size: 0.95rem;
 }
 
+#project {
+  padding-top: 40px;
+}
+
+.project-card {
+  position: relative;
+  background: #111;
+  border: 1px solid #222;
+  padding: 25px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.project-link {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  font-size: 1.1rem;
+  color: #4da6ff;
+  transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+  transform: scale(1.15);
+}
+
 /* CARROSSEL BASE */
 .carousel {
   overflow: hidden;
