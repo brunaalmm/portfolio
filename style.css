@@ -281,6 +281,70 @@ body {
   }
 }
 
+/* FORMAÇÃO */
+.education {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.edu-card {
+  min-width: 320px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(77, 166, 255, 0.25);
+}
+
+.edu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.edu-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.edu-date {
+  font-size: 0.85rem;
+  color: #9fd3ff;
+}
+
+.edu-content h3 {
+  margin: 10px 0;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+.edu-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cce6ff;
+  margin-bottom: 15px;
+}
+
+.edu-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #4da6ff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.edu-link:hover {
+  color: #ffffff;
+}
+
 /* ANIMAÇÕES */
 @keyframes fadeIn {
   from {
