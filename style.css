@@ -135,12 +135,15 @@ h2 {
 }
 
 /* SOBRE */
+#sobre {
+  padding-top: 40px;
+}
+
 .about-text {
+  font-size: 1.15rem;
+  line-height: 1.7;
   max-width: 850px;
-  margin: 0 auto 50px;
-  text-align: center;
-  line-height: 1.6;
-  opacity: 0.95;
+  margin: 0 auto 40px;
 }
 
 .cards {
@@ -157,6 +160,12 @@ h2 {
   padding: 30px;
   width: 320px;
   text-align: center;
+}
+
+.card-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card i {
