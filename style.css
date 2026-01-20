@@ -183,31 +183,51 @@ h2 {
   margin: 6px 0;
   font-size: 0.95rem;
 }
-
-#project {
+ 
+}/* PROJETOS */
+#projects {
   padding-top: 40px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .project-card {
-  position: relative;
-  background: #111;
-  border: 1px solid #222;
-  padding: 25px;
-  border-radius: 14px;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  border-radius: 16px;
+  padding: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
 }
 
-.project-link {
-  position: absolute;
-  bottom: 18px;
-  right: 18px;
-  font-size: 1.1rem;
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cce6ff;
+  margin-bottom: 15px;
+}
+
+.project-card span {
   color: #4da6ff;
-  transition: transform 0.2s ease;
-}
-
-.project-link:hover {
-  transform: scale(1.15);
+  font-weight: 500;
 }
 
 /* CARROSSEL BASE */
