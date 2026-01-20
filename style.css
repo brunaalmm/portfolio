@@ -223,6 +223,64 @@ body {
   font-weight: 500;
 }
 
+/* TECNOLOGIAS */
+.tech {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.tech-card {
+  min-width: 140px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #cce6ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tech-card i {
+  font-size: 2rem;
+  color: #4da6ff;
+}
+
+.tech-card span {
+  font-size: 0.9rem;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
+}
+
+/* ANIMAÇÃO DO CARROSSEL */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* ANIMAÇÕES */
 @keyframes fadeIn {
   from {
