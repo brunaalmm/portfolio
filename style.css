@@ -5,13 +5,9 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-               Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-               "Helvetica Neue", sans-serif;
-
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, Cantarell;
   background: linear-gradient(135deg, #0f172a, #0b3c5d);
   color: #e5f0ff;
-  min-height: 100vh;
 }
 
 /* NAVBAR */
@@ -21,49 +17,37 @@ body {
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
+  list-style: none;
 }
 
 .navbar a {
   text-decoration: none;
   color: #9fd3ff;
-  font-weight: 500;
-  transition: color 0.3s;
 }
 
 .navbar a:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
 /* HERO */
 .hero {
-  min-height: 85vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  animation: fadeIn 1.2s ease;
 }
 
-/* FOTO */
 .profile-img {
   width: 150px;
-  height: 150px;
   border-radius: 50%;
   border: 4px solid #4da6ff;
   margin-bottom: 20px;
   animation: float 3s ease-in-out infinite;
-}
-
-/* TEXTOS */
-.hero h1 {
-  font-size: 2.3rem;
-  margin-bottom: 10px;
 }
 
 .hero h1 span {
@@ -71,17 +55,10 @@ body {
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  color: #cce6ff;
-  margin-bottom: 25px;
+  margin: 15px 0;
 }
 
-.legend {
-  font-size: 0.95rem;
-  opacity: 0.85;
-}
-
-/* REDES SOCIAIS */
+/* SOCIAL */
 .social-icons {
   display: flex;
   gap: 20px;
@@ -89,25 +66,18 @@ body {
 
 .social-icons a {
   color: #9fd3ff;
-  font-size: 1.6rem;
-  transition: transform 0.3s, color 0.3s;
+  font-size: 1.5rem;
 }
 
 .social-icons a:hover {
-  color: #ffffff;
+  color: #fff;
   transform: scale(1.2);
 }
 
-/* SOBRE MIM */
-.about {
+/* SEÇÕES */
+section {
   padding: 80px 20px;
   text-align: center;
-  animation: fadeIn 1.2s ease;
-}
-
-.about h2 {
-  font-size: 2rem;
-  color: #ffffff;
 }
 
 .line {
@@ -118,250 +88,85 @@ body {
   border-radius: 10px;
 }
 
-.about-text {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #cce6ff;
-}
-
-/* CARDS */
+/* SOBRE */
 .cards {
   display: flex;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(77, 166, 255, 0.3);
-  border-radius: 16px;
-  padding: 30px;
   width: 320px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
-}
-
-.card i {
-  font-size: 2rem;
-  color: #4da6ff;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin-bottom: 15px;
-  color: #ffffff;
-}
-
-.card p,
-.card ul {
-  color: #cce6ff;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.card ul li::before {
-  content: "• ";
-  color: #4da6ff;
-}
-
-/* PROJETOS */
-.projects {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(77, 166, 255, 0.3);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(77,166,255,0.3);
   border-radius: 16px;
   padding: 30px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: left;
 }
 
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
-}
-
-.project-card h3 {
-  color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #cce6ff;
-  margin-bottom: 15px;
-}
-
-.project-card span {
-  color: #4da6ff;
-  font-weight: 500;
-}
-
-/* TECNOLOGIAS */
-.tech {
-  padding: 80px 20px;
-  text-align: center;
-}
-
+/* CARROSSEL */
 .carousel {
   overflow: hidden;
-  max-width: 100%;
-  margin-top: 40px;
 }
 
 .carousel-track {
   display: flex;
   gap: 25px;
   width: max-content;
-  animation: scroll 25s linear infinite;
+  animation: scroll 30s linear infinite;
+  will-change: transform;
 }
 
+.carousel.fast .carousel-track {
+  animation-duration: 20s;
+}
+
+.carousel.slow .carousel-track {
+  animation-duration: 45s;
+}
+
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* TECH */
 .tech-card {
   min-width: 140px;
   height: 120px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(77, 166, 255, 0.3);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(77,166,255,0.3);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  color: #cce6ff;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.tech-card i {
-  font-size: 2rem;
-  color: #4da6ff;
-}
-
-.tech-card span {
-  font-size: 0.9rem;
-}
-
-.tech-card:hover {
-  transform: translateY(-6px) scale(1.05);
-  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
-}
-
-/* ANIMAÇÃO DO CARROSSEL */
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-/* FORMAÇÃO */
-.education {
-  padding: 80px 20px;
-  text-align: center;
-}
-
+/* EDU */
 .edu-card {
   min-width: 320px;
-  max-width: 320px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(77, 166, 255, 0.3);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(77,166,255,0.3);
   border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.edu-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(77, 166, 255, 0.25);
 }
 
 .edu-card img {
   width: 100%;
-  height: 160px;
-  object-fit: cover;
 }
 
-.edu-content {
-  padding: 20px;
-  text-align: left;
-}
-
-.edu-date {
-  font-size: 0.85rem;
-  color: #9fd3ff;
-}
-
-.edu-content h3 {
-  margin: 10px 0;
-  color: #ffffff;
-  font-size: 1.05rem;
-}
-
-.edu-content p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: #cce6ff;
-  margin-bottom: 15px;
-}
-
-.edu-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: #4da6ff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.edu-link:hover {
-  color: #ffffff;
-}
-
-/* ANIMAÇÕES */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* FIX ANTI BUG */
+.tech-card, .edu-card, .project-card {
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
