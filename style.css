@@ -176,6 +176,53 @@ body {
   color: #4da6ff;
 }
 
+/* PROJETOS */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(77, 166, 255, 0.3);
+  border-radius: 16px;
+  padding: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.25);
+}
+
+.project-card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cce6ff;
+  margin-bottom: 15px;
+}
+
+.project-card span {
+  color: #4da6ff;
+  font-weight: 500;
+}
+
 /* ANIMAÇÕES */
 @keyframes fadeIn {
   from {
